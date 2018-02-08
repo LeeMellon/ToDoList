@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Add a new item to @Model["category"].GetName()</h1>
+    <form action="/items" method="post">
+      <input id="category-id" type="hidden" name="category-id" value='@Model["category"].GetId()'>
+      <label for="item-description">Item description</label>
+      <input type="text" name="item-description" id="item-description">
+      <button type="submit" name="button">Add item</button>
+    </form>
+  </body>
+</html>
